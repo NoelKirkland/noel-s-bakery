@@ -26,7 +26,7 @@ namespace Bakery.Models
     }
     public int PriceCalculatorPastry()
     {
-      return (Quantity);
+      return (Quantity * 2);
     }
   }
 }
