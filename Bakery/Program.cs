@@ -1,5 +1,6 @@
 using System;
-using Bakery.Models;
+using BreadBakery.Models;
+using PastryBakery.Models;
 
 namespace Bakery
 {
