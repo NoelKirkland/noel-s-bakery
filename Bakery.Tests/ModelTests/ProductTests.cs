@@ -44,6 +44,20 @@ namespace Bakery.TestTools
     }
 
     [TestMethod]
+    public void PriceCalculatorPastry_CalculatesPriceOfPastryBasedOnQuantity_12()
+    {
+      Pastry newPastry = new Pastry(7);
+      Assert.AreEqual("12.00", newPastry.PriceCalculatorPastry());
+    }
+
+    [TestMethod]
+    public void PriceCalculatorPastry_CalculatesPriceOfPastryBasedOnQuantity_14()
+    {
+      Pastry newPastry = new Pastry(8);
+      Assert.AreEqual("14.00", newPastry.PriceCalculatorPastry());
+    }
+
+    [TestMethod]
     public void PriceCalculatorPastry_CalculatesPriceOfPastryBasedOnQuantity_18()
     {
       Pastry newPastry = new Pastry(9);

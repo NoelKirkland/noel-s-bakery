@@ -54,15 +54,15 @@ namespace Bakery.Models
         string price = priceDec.ToString("N2");
         return price;
       }
-      else if (Quantity % 3 == 0)
+      else if (Quantity % 3 == 1)
       {
         decimal priceDec =  (((Quantity - 1) * 2)*(5/6m) + 2);
         string price = priceDec.ToString("N2");
         return price;
       }
-      else if (Quantity % 3 == 0)
+      else if (Quantity % 3 == 2)
       {
-        decimal priceDec =  (((Quantity - 2) * 2)*(5/6m) + 2);
+        decimal priceDec =  (((Quantity - 2) * 2)*(5/6m) + 4);
         string price = priceDec.ToString("N2");
         return price;
       }
