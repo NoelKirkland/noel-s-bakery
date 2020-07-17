@@ -47,7 +47,7 @@ namespace Bakery.TestTools
     public void PriceCalculator_CalculatesPriceOfPastryBasedOnQuantity_18()
     {
       Pastry newPastry = new Pastry(9);
-      Assert.AreEqual(18, newPastry.PriceCalculatorPastry());
+      Assert.AreEqual("15.00", newPastry.PriceCalculatorPastry());
     }
   }
 }
