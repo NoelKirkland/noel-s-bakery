@@ -11,7 +11,7 @@ namespace Bakery.Models
       Quantity = quantity;
     }
 
-    public int PriceCalculator()
+    public int PriceCalculatorBread()
     {
       return (Quantity * 5);
     }
@@ -23,6 +23,10 @@ namespace Bakery.Models
     public Pastry(int quantity)
     {
       Quantity = quantity;
+    }
+    public int PriceCalculatorPastry()
+    {
+      return (Quantity);
     }
   }
 }
