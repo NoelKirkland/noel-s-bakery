@@ -10,9 +10,7 @@ namespace Bakery
     {
       decimal number1 = Decimal.Parse(string1);
       decimal number2 = Decimal.Parse(string2);
-
       decimal total = (number1 + number2);
-
       Console.WriteLine("Your grand total will be $" + total);
     }
 
@@ -30,10 +28,10 @@ namespace Bakery
       string pastryQuantityString = Console.ReadLine();
       int pastryQuantity = int.Parse(pastryQuantityString);
       Pastry newPastry = new Pastry(pastryQuantity);
+
       Console.WriteLine("For " + newBread.Quantity + " loafs of bread your total would be $" + newBread.PriceCalculatorBread());
       Console.WriteLine("For " + newPastry.Quantity + " pastries your total would be $" + newPastry.PriceCalculatorPastry());
       grandTotal(newPastry.PriceCalculatorPastry(), newBread.PriceCalculatorBread());
-      
     }
   }
 }

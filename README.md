@@ -10,45 +10,52 @@ This is a console application built using C#. The application will allow a user 
 
 1. The application will create an object instance of Bread with an argument of _quantity_
 
-| Input | Output |
-| :--- | :--- |
-| 12 | Bread { Quantity=12 } |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Bread(1); | Bread { Quantity=1 } |
+    |||
 
 2. The application will create an object instance of Pastry with an argument of _quantity_
 
-| Input | Output |
-| :--- | :--- |
-| 9 | Pastry { Quantity=1 } |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Pastry(1); | Pastry { Quantity=1 } |
+    |||
 
 3. The application will return a _total price_ based on the quantity of Bread if a single loaf is $5.00
 
-| Input | Output |
-| :--- | :--- |
-| 12 | 60.00 |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Bread(12); | 60.00 |
+    |||
 
 4. The application will return a _total price_ based on the quantity of Pastry if a single pastry is $2.00
 
-| Input | Output |
-| :--- | :--- |
-| 9 | 18.00 |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Pastry(9); | 18.00 |
+    |||
 
 5. The application will return a _total price_ based on the quantity of Bread if bread is buy-2-get-1-free
 
-| Input | Output |
-| :--- | :--- |
-| 12 | 40.00 |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Bread(12); | 40.00 |
+    |||
 
 6. The application will return a _total price_ based on the quantity of Pastry if pastries are buy-3-for-$5.00
 
-| Input | Output |
-| :--- | :--- |
-| 9 | 15.00 |
-|||
+    | Input | Output |
+    | :--- | :--- |
+    | Pastry(9); | 15.00 |
+    |||
+
+6. The application will return a _grand total_ based on the quantity of Pastry and quantity of Bread
+
+    | Input | Output |
+    | :--- | :--- |
+    | Bread(12); Pastry(9); | 75.00 |
+    |||
 
 ## Setup/Installation Requirements
 

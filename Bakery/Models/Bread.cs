@@ -10,7 +10,6 @@ namespace BreadBakery.Models
     {
       Quantity = quantity;
     }
-
     public string PriceCalculatorBread()
     {
       if (Quantity % 3 == 0)
