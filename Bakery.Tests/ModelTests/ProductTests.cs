@@ -26,7 +26,14 @@ namespace Bakery.TestTools
     public void PriceCalculator_CalculatesPriceOfBreadBasedOnQuantity_60()
     {
       Bread newBread = new Bread(12);
-      Assert.AreEqual(60, newBread.PriceCalculator());
+      Assert.AreEqual(60, newBread.PriceCalculatorBread());
+    }
+
+    [TestMethod]
+    public void PriceCalculator_CalculatesPriceOfPastryBasedOnQuantity_18()
+    {
+      Pastry newPastry = new Pastry(9);
+      Assert.AreEqual(18, newPastry.PriceCalculatorPastry());
     }
   }
 }
