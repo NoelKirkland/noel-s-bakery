@@ -11,8 +11,13 @@ namespace Bakery.Models
       Quantity = quantity;
     }
   }
-  // public class Pastry
-  // {
+  public class Pastry
+  {
+    public int Quantity {get; set; }
 
-  // }
+    public Pastry(int quantity)
+    {
+      Quantity = quantity;
+    }
+  }
 }

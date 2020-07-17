@@ -9,19 +9,25 @@ namespace Bakery.TestTools
   public class ProductTests
   {
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBread_NOne()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBread_NOne()
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
       Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     
+    [TestMethod]
+    public void PriceCalculator_CalculatesPriceOfBreadBasedOnQuantity_60()
+    {
+      Bread newBread = new Bread(12);
+      Assert.AreEqual(60, newBread.PriceCalculator());
+    }
   }
 }
 
