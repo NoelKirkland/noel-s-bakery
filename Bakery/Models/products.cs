@@ -37,17 +37,6 @@ namespace Bakery.Models
       }
     }
 
-    // public decimal PriceCalculatorBread()
-    // {
-    //   if (Quantity % 2 == 0)
-    //   {
-    //     return ((Quantity * 5)((Quantity/3) * 5));
-    //   }
-    //   else
-    //   {
-    //     return (Quantity * 5);
-    //   }
-    // }
   }
   public class Pastry
   {
@@ -57,9 +46,18 @@ namespace Bakery.Models
     {
       Quantity = quantity;
     }
-    public int PriceCalculatorPastry()
+    public string PriceCalculatorPastry()
     {
-      return (Quantity * 2);
+      if (Quantity % 3 == 0)
+      {
+        int priceInt = (Quantity * 2);
+        string price = priceInt.ToString();
+        return price;
+      }
+      else
+      {
+        return "I'm sorry, there was a problem with your order";
+      }
     }
   }
 }
