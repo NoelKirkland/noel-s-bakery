@@ -50,8 +50,20 @@ namespace Bakery.Models
     {
       if (Quantity % 3 == 0)
       {
-        int priceInt = (Quantity * 2);
-        string price = priceInt.ToString();
+        decimal priceDec =  ((Quantity * 2)*(5/6m));
+        string price = priceDec.ToString("N2");
+        return price;
+      }
+      else if (Quantity % 3 == 0)
+      {
+        decimal priceDec =  (((Quantity - 1) * 2)*(5/6m) + 2);
+        string price = priceDec.ToString("N2");
+        return price;
+      }
+      else if (Quantity % 3 == 0)
+      {
+        decimal priceDec =  (((Quantity - 2) * 2)*(5/6m) + 2);
+        string price = priceDec.ToString("N2");
         return price;
       }
       else
