@@ -4,10 +4,15 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    
-  }
-  public class Pastry
-  {
+    public int Quantity { get; set; }
 
+    public Bread(int quantity)
+    {
+      Quantity = quantity;
+    }
   }
+  // public class Pastry
+  // {
+
+  // }
 }
