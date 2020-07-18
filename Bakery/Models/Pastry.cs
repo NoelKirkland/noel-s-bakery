@@ -4,8 +4,8 @@ namespace PastryBakery.Models
 {
   public class Pastry
   {
-    public int Quantity {get; set; }
-
+    public int Quantity { get; set; }
+    
     public Pastry(int quantity)
     {
       Quantity = quantity;
