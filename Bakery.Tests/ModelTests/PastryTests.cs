@@ -13,6 +13,7 @@ namespace PastryBakery.Test
       Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
     [TestMethod]
     public void PriceCalculatorPastry_CalculatesPriceOfPastryBasedOnQuantity_12()
     {
