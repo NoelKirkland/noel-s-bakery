@@ -59,7 +59,7 @@ namespace Bakery
       Console.WriteLine("|                                   |");
       Console.WriteLine("|            Thank you!             |");
       Console.WriteLine("|___________________________________|");
-            Console.WriteLine(" ");
+      Console.WriteLine(" ");
     }
   }
 }

@@ -13,7 +13,7 @@ namespace BreadBakery.Test
       Bread newBread = new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
-    
+
     [TestMethod]
     public void PriceCalculatorBread_CalculatesPriceOfBreadBasedOnQuantityOf10_35()
     {
